@@ -3,3 +3,74 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --dark-blue: #051d3b;
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  padding: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template: auto / 1fr 2fr 1fr;
+}
+
+#menu {
+  background-color: green;
+}
+#codigo {
+  background-color: brown;
+}
+#infos-projeto {
+  background-color: rosybrown;
+}
+
+header {
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+header #logo img {
+  height: 56px;
+}
+
+header #barra-pesquisa input {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  padding: 0px 14px;
+  border: none;
+}
+
+header #barra-pesquisa input::placeholder {
+  color: #b6b6b6;
+}
+
+header #perfil {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+header #perfil a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

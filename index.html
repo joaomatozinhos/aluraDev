@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraDev</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="logo">
+          <a href="#"
+            ><img src="assets/logo-plataforma.png" alt="Logo Plataforma"
+          /></a>
+        </div>
+        <div id="barra-pesquisa">
+          <input type="text" id="pesquisa" placeholder="Busque por algo" />
+        </div>
+        <div id="perfil">
+          <a href="#"
+            ><img src="assets/usuario.jpg" alt="Usuário" /><span>Harry</span></a
+          >
+        </div>
+      </header>
+      <main>
+        <section id="menu">
+          <ul>
+            <li id="editor-codigo">
+              <a href="#"
+                ><i class="fas fa-code"></i><span>Editor de código</span></a
+              >
+            </li>
+            <li id="comunidade">
+              <a href="#"
+                ><i class="fas fa-users"></i><span>Comunidade</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="codigo">
+          <div class="bg-codigo">
+            <textarea name="codigo" id="codigo" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <p>Visualizar com o highlight</p>
+          </div>
+        </section>
+        <section id="infos-projeto">
+          <div id="seu-projeto">
+            <h4>Seu projeto</h4>
+            <input type="text" placeholder="Nome do seu projeto" />
+            <textarea
+              type="text"
+              placeholder="Descrição do seu projeto"
+            ></textarea>
+          </div>
+          <div id="personalizacao">
+            <h4>Personalização</h4>
+            <select name="linguagens" id="linguagens">
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="csharp">C#</option>
+            </select>
+            <input type="color" />
+          </div>
+          <button id="btn-salvar-projeto">Salvar projeto</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

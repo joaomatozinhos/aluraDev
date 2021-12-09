@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-input);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+:root {
+  --dark-blue: #051d3b;
+  --bg-input: rgba(255, 255, 255, 0.16);
+  --bg-code: #141414;
+  --color-input: #b6b6b6;
+  --light-blue: #5081fb;
+  --light-blue-transp: rgba(80, 129, 251, 0.16);
+  --light-blue-2: #6bd1ff;
+  --white: #ffffff;
+  --btn-light-blue: #5081fb;
+  --btn-dark-blue: rgba(80, 129, 251, 0.08);
+}
+
+body {
+  background-color: var(--dark-blue);
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+}
+
+.container {
+  padding: 25px 42px;
+}
+
+.grid {
+  display: grid;
+  grid-template: auto / 1fr 2fr 1fr;
+}
+
+header {
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+header #logo img {
+  height: 56px;
+}
+
+header #barra-pesquisa input {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-input);
+  border-radius: 8px;
+  padding: 0 14px;
+  color: var(--white);
+}
+
+header #perfil {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+header #perfil a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+section {
+  height: 80vh;
+}
+
+#menu {
+  margin-right: 40px;
+  padding-left: 15px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+#menu ul li {
+  margin-bottom: 16px;
+}
+
+#menu ul li a i {
+  background-color: var(--light-blue-transp);
+  padding: 14px 12px;
+  border-radius: 15px;
+  margin-right: 16px;
+  transition: 0.6s;
+}
+
+#menu ul li a:hover > i {
+  background-color: var(--light-blue);
+}
+
+@media only screen and (max-width: 649px) {
+  .grid-header {
+    grid-template: auto 60px / 1fr 1fr;
+  }
+
+  header #perfil {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .container {
+    padding: 25px 20px;
+  }
+}

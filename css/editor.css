@@ -1,0 +1,173 @@
+/* ================== STYLE DA PÁGINA EDITOR DE CÓDIGO ================== */
+
+#codigo .bg-codigo {
+  background-color: var(--light-blue-2);
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+#codigo #code {
+  width: 100%;
+  position: relative;
+}
+
+#codigo .bg-codigo #code textarea {
+  background-color: var(--bg-code);
+  color: var(--white);
+  font-family: monospace;
+  width: 100%;
+  height: 302px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  padding: 40px 16px 16px;
+}
+
+.btn-mac {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 50px;
+}
+
+#btn-highlight {
+  background-color: var(--btn-dark-blue);
+  color: var(--white);
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+#btn-highlight:hover {
+  background-color: #0b276b;
+}
+
+#infos-projeto {
+  margin-left: 40px;
+}
+
+#infos-projeto #seu-projeto input {
+  background-color: var(--bg-input);
+  color: var(--white);
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+#infos-projeto #seu-projeto textarea {
+  background-color: var(--bg-input);
+  color: var(--white);
+  width: 100%;
+  height: 80px;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+#infos-projeto #personalizacao h4 {
+  margin-top: 40px;
+}
+
+#infos-projeto #personalizacao select {
+  background-color: var(--bg-input);
+  color: var(--color-input);
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+#infos-projeto #personalizacao input[type='color'] {
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 1px 6px;
+}
+
+#btn-salvar-projeto {
+  background-color: var(--btn-light-blue);
+  color: var(--white);
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+#btn-salvar-projeto:hover {
+  background-color: rgb(25, 86, 238);
+}
+
+@media only screen and (max-width: 869px) {
+  .grid-main {
+    grid-template: 100px auto / 2fr 1fr;
+    grid-template-areas:
+      'menu menu'
+      'codigo infos-projeto';
+  }
+
+  #menu {
+    grid-area: menu;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  #menu ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  #codigo {
+    grid-area: codigo;
+  }
+
+  #infos-projeto {
+    grid-area: infos-projeto;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .grid-main {
+    grid-template: 100px auto auto / auto;
+    grid-template-areas:
+      'menu'
+      'codigo'
+      'infos-projeto';
+    margin-top: 60px;
+  }
+
+  #infos-projeto {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  .grid-main {
+    grid-template: 150px auto auto / auto;
+    grid-template-areas:
+      'menu'
+      'codigo'
+      'infos-projeto';
+  }
+
+  #menu ul {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  #codigo .bg-codigo {
+    padding: 10px;
+  }
+}

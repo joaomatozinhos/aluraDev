@@ -228,3 +228,80 @@ section {
 #btn-salvar-projeto:hover {
   background-color: rgb(25, 86, 238);
 }
+
+@media only screen and (max-width: 869px) {
+  .grid-main {
+    grid-template: 100px auto / 2fr 1fr;
+    grid-template-areas:
+      'menu menu'
+      'codigo infos-projeto';
+  }
+
+  #menu {
+    grid-area: menu;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  #menu ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  #codigo {
+    grid-area: codigo;
+  }
+
+  #infos-projeto {
+    grid-area: infos-projeto;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .grid-header {
+    grid-template: auto 60px / 1fr 1fr;
+  }
+
+  header #perfil {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .grid-main {
+    grid-template: 100px auto auto / auto;
+    grid-template-areas:
+      'menu'
+      'codigo'
+      'infos-projeto';
+    margin-top: 60px;
+  }
+
+  #infos-projeto {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  .grid-main {
+    grid-template: 150px auto auto / auto;
+    grid-template-areas:
+      'menu'
+      'codigo'
+      'infos-projeto';
+  }
+
+  #menu ul {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  #codigo .bg-codigo {
+    padding: 10px;
+  }
+}

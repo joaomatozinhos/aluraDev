@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AluraDev</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,13 +31,15 @@
         </div>
         <div id="perfil">
           <a href="#"
-            ><img src="assets/usuario.svg" alt="Usuário" /><span>Harry</span></a
+            ><img src="assets/usuario.svg" alt="Usuário" /><span
+              >Harry Smith</span
+            ></a
           >
         </div>
       </header>
       <main class="grid">
         <section id="menu">
-          <h4>Menu</h4>
+          <h4 class="subtitle">Menu</h4>
           <ul>
             <li id="editor-codigo">
               <a href="#"
@@ -52,15 +55,18 @@
         </section>
         <section id="codigo">
           <div class="bg-codigo">
-            <textarea name="codigo" id="codigo" cols="30" rows="10"></textarea>
+            <div id="code">
+              <textarea name="codigo" id="codigo"></textarea>
+              <img src="assets/mac_buttons.svg" id="btn-mac" />
+            </div>
           </div>
           <div>
-            <p>Visualizar com o highlight</p>
+            <button id="btn-highlight">Visualizar com o highlight</button>
           </div>
         </section>
         <section id="infos-projeto">
           <div id="seu-projeto">
-            <h4>Seu projeto</h4>
+            <h4 class="subtitle">Seu projeto</h4>
             <input type="text" placeholder="Nome do seu projeto" />
             <textarea
               type="text"
@@ -68,12 +74,13 @@
             ></textarea>
           </div>
           <div id="personalizacao">
-            <h4>Personalização</h4>
+            <h4 class="subtitle">Personalização</h4>
             <select name="linguagens" id="linguagens">
               <option value="javascript">JavaScript</option>
               <option value="python">Python</option>
               <option value="csharp">C#</option>
             </select>
+            <br />
             <input type="color" />
           </div>
           <button id="btn-salvar-projeto">Salvar projeto</button>

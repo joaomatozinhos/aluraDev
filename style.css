@@ -146,7 +146,7 @@ section {
   padding: 40px 16px 16px;
 }
 
-#btn-mac {
+.btn-mac {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -227,6 +227,124 @@ section {
 
 #btn-salvar-projeto:hover {
   background-color: rgb(25, 86, 238);
+}
+
+/* ================== STYLE DA PÁGINA COMUNIDADE ================== */
+
+.grid-main-comunidade {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid-codigos-comunidade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#codigos .bg-codigos {
+  background-color: var(--light-blue-2);
+  width: 100%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+#codigos .bg-color2 {
+  background-color: #9aff6b;
+}
+
+#codigos .bg-color3 {
+  background-color: #6b83ff;
+}
+
+#codigos .bg-color4 {
+  background-color: #ffc46b;
+}
+
+#codigos .bg-color5 {
+  background-color: #ff6bcd;
+}
+
+#codigos .code {
+  width: 100%;
+  position: relative;
+}
+
+#codigos .bg-codigos .code textarea {
+  background-color: var(--bg-code);
+  color: var(--white);
+  font-family: monospace;
+  width: 100%;
+  height: 302px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  padding: 40px 16px 16px;
+}
+
+#codigos .bg-codigo .code .btn-mac {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 50px;
+}
+
+.post-projeto {
+  background: rgba(0, 0, 0, 0.16);
+  height: 176px;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.descricao-projeto h3 {
+  margin-bottom: 8px;
+}
+
+.descricao-projeto p {
+  margin-bottom: 24px;
+}
+
+.social-projeto {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.interacao-projeto {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.interacao-projeto i {
+  padding-right: 4px;
+}
+
+.btn-social {
+  background: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.btn-social i {
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.6s;
+}
+
+.btn-social:hover > i {
+  color: #5081fb;
+}
+
+.autor-projeto a {
+  display: flex;
+  align-items: center;
+}
+
+.autor-projeto img {
+  height: 24px;
+  margin-right: 5px;
 }
 
 @media only screen and (max-width: 869px) {

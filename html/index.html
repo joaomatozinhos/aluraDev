@@ -85,20 +85,23 @@ const unfold = (f, seed) => {
           <div id="seu-projeto">
             <h4 class="subtitle">Seu projeto</h4>
             <input type="text" placeholder="Nome do seu projeto" />
-            <textarea type="text" placeholder="Descrição do seu projeto">
-            </textarea>
+            <textarea
+              type="text"
+              placeholder="Descrição do seu projeto"
+            ></textarea>
           </div>
           <div id="personalizacao">
             <h4 class="subtitle">Personalização</h4>
-            <select name="linguagens" id="linguagens">
-              <option value="html">HTML</option>
-              <option value="css">CSS</option>
-              <option value="javascript">JavaScript</option>
-              <option value="python">Python</option>
-              <option value="csharp">C#</option>
-            </select>
-            <br />
-            <input type="color" />
+            <div>
+              <select name="linguagens" id="linguagens">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="csharp">C#</option>
+              </select>
+              <input type="color" />
+            </div>
           </div>
           <button id="btn-salvar-projeto">Salvar projeto</button>
         </section>

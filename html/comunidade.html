@@ -58,7 +58,19 @@
           <div class="codigo">
             <div class="bg-codigos bg-color2">
               <div class="code">
-                <textarea name="codigo" id="codigo1"></textarea>
+                <textarea name="codigo" id="codigo1">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+                </textarea>
                 <img src="../assets/mac_buttons.svg" class="btn-mac" />
               </div>
             </div>
@@ -94,7 +106,19 @@
           <div class="codigo">
             <div class="bg-codigos bg-color3">
               <div class="code">
-                <textarea name="codigo" id="codigo2"></textarea>
+                <textarea name="codigo" id="codigo2">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+                </textarea>
                 <img src="../assets/mac_buttons.svg" class="btn-mac" />
               </div>
             </div>
@@ -130,7 +154,19 @@
           <div class="codigo">
             <div class="bg-codigos bg-color4">
               <div class="code">
-                <textarea name="codigo" id="codigo3"></textarea>
+                <textarea name="codigo" id="codigo3">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+                </textarea>
                 <img src="../assets/mac_buttons.svg" class="btn-mac" />
               </div>
             </div>
@@ -166,7 +202,19 @@
           <div class="codigo">
             <div class="bg-codigos bg-color5">
               <div class="code">
-                <textarea name="codigo" id="codigo4"></textarea>
+                <textarea name="codigo" id="codigo4">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+                </textarea>
                 <img src="../assets/mac_buttons.svg" class="btn-mac" />
               </div>
             </div>

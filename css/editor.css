@@ -39,6 +39,8 @@
   height: 56px;
   border-radius: 8px;
   margin-top: 32px;
+  margin-bottom: 40px;
+
   cursor: pointer;
   transition: 0.6s;
 }
@@ -70,7 +72,7 @@
   border-radius: 8px;
 }
 
-#infos-projeto #personalizacao h4 {
+#infos-projeto #personalizacao {
   margin-top: 40px;
 }
 

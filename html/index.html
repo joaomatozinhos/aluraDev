@@ -61,7 +61,19 @@
         <section id="codigo">
           <div class="bg-codigo">
             <div id="code">
-              <textarea name="codigo" id="codigo"></textarea>
+              <textarea name="codigo" id="codigo">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+  const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+  }
+  return go(f, seed, [])
+}
+              </textarea>
               <img src="../assets/mac_buttons.svg" class="btn-mac" />
             </div>
           </div>
@@ -73,14 +85,14 @@
           <div id="seu-projeto">
             <h4 class="subtitle">Seu projeto</h4>
             <input type="text" placeholder="Nome do seu projeto" />
-            <textarea
-              type="text"
-              placeholder="Descrição do seu projeto"
-            ></textarea>
+            <textarea type="text" placeholder="Descrição do seu projeto">
+            </textarea>
           </div>
           <div id="personalizacao">
             <h4 class="subtitle">Personalização</h4>
             <select name="linguagens" id="linguagens">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
               <option value="javascript">JavaScript</option>
               <option value="python">Python</option>
               <option value="csharp">C#</option>

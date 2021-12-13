@@ -77,7 +77,6 @@
 .social-projeto {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 24px;
 }
 
 .interacao-projeto {
@@ -90,16 +89,27 @@
   padding-right: 4px;
 }
 
+.btn {
+  border-radius: 16px;
+  padding: 8px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .btn-social {
   background: none;
   margin: 0;
-  cursor: pointer;
 }
 
 .btn-social i {
   color: #ffffff;
   font-size: 16px;
   transition: 0.6s;
+  cursor: pointer;
 }
 
 .btn-social:hover > i {

@@ -110,7 +110,7 @@
   background-color: rgb(25, 86, 238);
 }
 
-@media only screen and (max-width: 869px) {
+@media only screen and (max-width: 926px) {
   .grid-main {
     grid-template: 100px auto auto / auto;
     grid-template-areas:

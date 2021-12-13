@@ -84,9 +84,14 @@ const unfold = (f, seed) => {
         <section id="infos-projeto">
           <div id="seu-projeto">
             <h4 class="subtitle">Seu projeto</h4>
-            <input type="text" placeholder="Nome do seu projeto" />
+            <input
+              type="text"
+              id="nome-projeto"
+              placeholder="Nome do seu projeto"
+            />
             <textarea
               type="text"
+              id="descricao-projeto"
               placeholder="Descrição do seu projeto"
             ></textarea>
           </div>
@@ -100,13 +105,13 @@ const unfold = (f, seed) => {
                 <option value="python">Python</option>
                 <option value="csharp">C#</option>
               </select>
-              <input type="color" />
+              <input type="color" id="cor-selecionada" />
             </div>
           </div>
-          <button id="btn-salvar-projeto">Salvar projeto</button>
+          <button id="btn-salvar-projeto" onclick="">Salvar projeto</button>
         </section>
       </main>
     </div>
-    <script src="script.js"></script>
+    <script src="../js/editor.js"></script>
   </body>
 </html>

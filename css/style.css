@@ -86,6 +86,13 @@ header #perfil a {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.6s;
+}
+
+header #perfil a:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 #menu {
@@ -115,6 +122,14 @@ header #perfil a {
 #menu ul li a:hover > i {
   background-color: var(--light-blue);
 }
+
+/* #editor-codigo:active {
+  background-color: red;
+}
+
+#comunidade:active {
+  background-color: salmon;
+} */
 
 @media only screen and (max-width: 649px) {
   .grid-header {

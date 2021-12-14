@@ -25,13 +25,13 @@ ${projeto.codigo}
           <button class="btn-social">
             <i class="fas fa-comment"></i>
           </button>
-          <span>9</span>
+          <span>0</span>
         </div>
         <div class="btn">
           <button class="btn-social">
             <i class="fas fa-heart"></i>
           </button>
-          <span>9</span>
+          <span>0</span>
         </div>
       </div>
       <div class="autor-projeto">

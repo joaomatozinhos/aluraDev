@@ -36,9 +36,11 @@
         </div>
         <div id="perfil">
           <a href="#"
-            ><img src="../assets/usuario.svg" alt="Usuário" /><span
-              >Harry Smith</span
-            ></a
+            ><img
+              src="../assets/usuario.svg"
+              alt="Usuário"
+              id="foto-usuario"
+            /><span id="usuario">John Peter</span></a
           >
         </div>
       </header>
@@ -61,7 +63,7 @@
         <section id="codigo">
           <div class="bg-codigo">
             <div id="code">
-              <textarea name="codigo" id="codigo">
+              <textarea name="codigo" id="input-codigo">
 const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)

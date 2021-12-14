@@ -20,8 +20,16 @@
   padding: 24px;
 }
 
+#codigos .bg-color0 {
+  background-color: #c45d35;
+}
+
+#codigos .bg-color1 {
+  background-color: #6bd1ff;
+}
+
 #codigos .bg-color2 {
-  background-color: #9aff6b;
+  background-color: #7df844;
 }
 
 #codigos .bg-color3 {
@@ -34,6 +42,26 @@
 
 #codigos .bg-color5 {
   background-color: #ff6bcd;
+}
+
+#codigos .bg-color6 {
+  background-color: #992e75;
+}
+
+#codigos .bg-color7 {
+  background-color: #c53838;
+}
+
+#codigos .bg-color8 {
+  background-color: #2d6ca0;
+}
+
+#codigos .bg-color9 {
+  background-color: #bec48f;
+}
+
+#codigos .bg-color10 {
+  background-color: #6c618a;
 }
 
 #codigos .code {

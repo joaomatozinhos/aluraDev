@@ -10,6 +10,7 @@
       href="../assets/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../css/dracula.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/editor.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,20 +64,13 @@
         <section id="codigo">
           <div class="bg-codigo">
             <div id="code">
-              <textarea name="codigo" id="input-codigo">
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-  const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  }
-  return go(f, seed, [])
-}
-              </textarea>
               <img src="../assets/mac_buttons.svg" class="btn-mac" />
+              <code
+                class="hljs"
+                contenteditable="true"
+                aria-label="Editor de código"
+              >
+              </code>
             </div>
           </div>
           <div>
@@ -114,6 +108,7 @@ const unfold = (f, seed) => {
         </section>
       </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script src="../js/editor.js"></script>
   </body>
 </html>

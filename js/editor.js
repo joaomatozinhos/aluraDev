@@ -1,7 +1,7 @@
 let inputCor = document.getElementById('cor-selecionada')
 let bgCodigo = document.querySelector('#codigo .bg-codigo')
 let btnSalvar = document.getElementById('btn-salvar-projeto')
-let codigoProjeto = document.getElementById('input-codigo')
+let codigoProjeto = document.querySelector('code')
 let nomeProjeto = document.getElementById('nome-projeto')
 let descricaoProjeto = document.getElementById('descricao-projeto')
 let autor = document.getElementById('usuario')
@@ -17,7 +17,7 @@ inputCor.addEventListener('input', () => {
 
 btnSalvar.addEventListener('click', () => {
   let infosProjeto = {
-    codigo: codigoProjeto.value,
+    codigo: codigoProjeto.textContent,
     nome: nomeProjeto.value,
     descricao: descricaoProjeto.value,
     autor: autor.textContent,
@@ -42,3 +42,18 @@ if (localStorage.getItem('db_infosProjeto')) {
 }
 
 localStorage.setItem('db_usuarioCorrente', autor.textContent)
+
+// ============== APLICAR HIGHLIGHT ==============
+
+let btnHighlight = document.getElementById('btn-highlight')
+
+function aplicarHighlight() {
+  let codigo = codigoProjeto.innerText
+  codigoProjeto.innerHTML = `<code class=" hljs ${linguagem.value}" contenteditable="true" aria-label="Editor de código"></code>`
+  codigoProjeto.querySelector('code').textContent = codigo
+  hljs.highlightElement(codigoProjeto.querySelector('code'))
+}
+
+btnHighlight.addEventListener('click', () => {
+  aplicarHighlight()
+})

@@ -14,7 +14,7 @@
   position: relative;
 }
 
-#codigo .bg-codigo #code textarea {
+#codigo .bg-codigo #code {
   background-color: var(--bg-code);
   color: var(--white);
   font-family: monospace;
@@ -23,6 +23,17 @@
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
   border-radius: 8px;
   padding: 40px 16px 16px;
+}
+
+#codigo .bg-codigo #code code {
+  display: block;
+  max-width: 600px;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  white-space: pre-wrap;
+  overflow-y: auto;
 }
 
 .btn-mac {

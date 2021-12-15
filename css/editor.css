@@ -26,6 +26,7 @@
 }
 
 #codigo .bg-codigo #code code {
+  background-color: var(--bg-code);
   display: block;
   max-width: 600px;
   height: 100%;

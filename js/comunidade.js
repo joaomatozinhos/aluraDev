@@ -21,13 +21,13 @@ ${projeto.codigo}
     </div>
     <div class="social-projeto">
       <div class="interacao-projeto">
-        <div class="btn">
+        <div class="btn btn-comment" onclick="contarComentario()">
           <button class="btn-social">
             <i class="fas fa-comment"></i>
           </button>
           <span>0</span>
         </div>
-        <div class="btn">
+        <div class="btn btn-heart" onclick="contarLike()">
           <button class="btn-social">
             <i class="fas fa-heart"></i>
           </button>
@@ -48,3 +48,18 @@ ${projeto.codigo}
 
 let usuario = document.getElementById('usuario')
 usuario.textContent = localStorage.getItem('db_usuarioCorrente')
+
+let contadorLike = 0
+let contadorComentario = 0
+
+function contarLike() {
+  contadorLike++
+  let numLike = document.querySelector('.btn-heart span')
+  numLike.textContent = contadorLike
+}
+
+function contarComentario() {
+  contadorComentario++
+  let numComentario = document.querySelector('.btn-comment span')
+  numComentario.textContent = contadorComentario
+}

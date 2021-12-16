@@ -123,14 +123,6 @@ header #perfil a:hover {
   background-color: var(--light-blue);
 }
 
-/* #editor-codigo:active {
-  background-color: red;
-}
-
-#comunidade:active {
-  background-color: salmon;
-} */
-
 @media only screen and (max-width: 649px) {
   .grid-header {
     grid-template: auto 60px / 1fr 1fr;

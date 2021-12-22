@@ -157,12 +157,6 @@
   }
 }
 
-@media only screen and (max-width: 649px) {
-  .grid-main {
-    margin-top: 60px;
-  }
-}
-
 @media only screen and (max-width: 454px) {
   .grid-main {
     grid-template: 150px auto auto / auto;

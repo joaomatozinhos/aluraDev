@@ -126,11 +126,23 @@ header #perfil a:hover {
 @media only screen and (max-width: 649px) {
   .grid-header {
     grid-template: auto 60px / 1fr 1fr;
+    margin-bottom: 70px;
   }
 
   header #perfil {
     justify-self: flex-start;
     align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  .grid-header {
+    grid-template: auto 60px 60px / 1fr;
+    margin-bottom: 140px;
+  }
+
+  #logo {
+    justify-self: center;
   }
 }
 

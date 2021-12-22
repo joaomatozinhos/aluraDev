@@ -147,12 +147,6 @@
   }
 }
 
-@media only screen and (max-width: 649px) {
-  .grid-main-comunidade {
-    margin-top: 60px;
-  }
-}
-
 @media only screen and (max-width: 454px) {
   .grid-main-comunidade {
     grid-template: 150px auto/ auto;

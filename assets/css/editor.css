@@ -28,7 +28,7 @@
 #codigo .bg-codigo #code code {
   background-color: var(--bg-code);
   display: block;
-  max-width: 600px;
+  max-width: 650px;
   height: 100%;
   border: none;
   padding: 10px;
@@ -96,6 +96,10 @@
   padding: 0 14px;
   border-radius: 8px;
   margin-bottom: 16px;
+}
+
+#infos-projeto #personalizacao select option {
+  color: black;
 }
 
 #infos-projeto #personalizacao input[type='color'] {

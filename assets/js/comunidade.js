@@ -11,7 +11,7 @@ if (localStorage.getItem('db_infosProjeto')) {
       <textarea name="codigo" disabled>
 ${projeto.codigo}
       </textarea>
-      <img src="../assets/img/mac_buttons.svg" class="btn-mac" />
+      <img src="../img/mac_buttons.svg" class="btn-mac" />
     </div>
   </div>
   <div class="post-projeto">
